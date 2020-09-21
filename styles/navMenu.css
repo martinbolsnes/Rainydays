@@ -1,0 +1,26 @@
+ol,
+ul {
+  list-style: none;
+}
+
+#navMenu {
+  margin: 10px;
+  width: 900px;
+  font-family: proxima-nova;
+}
+
+#navMenu li {
+  display: block;
+  width: 120px;
+  float: left;
+  margin-left: 2px;
+  border: none;
+  color: black;
+}
+
+#navMenu a {
+  display: block;
+  padding: 3px;
+  text-decoration: none;
+  background-color: #ffffff;
+}
