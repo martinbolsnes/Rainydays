@@ -18,9 +18,24 @@
         src="img/Logo.svg"
         style="width: 231px; height: 134px"
       />
-      <img src="img/person-24px.svg" alt="User profile" />
-      <img src="img/shopping_cart-24px.svg" alt="Cart" />
-      <img src="img/search-24px.svg" alt="search" />
+      <img
+        class="profile"
+        src="img/person-24px.svg"
+        alt="User profile"
+        style="width: 35px; height: 35px"
+      />
+      <img
+        class="cart"
+        src="img/shopping_cart-24px.svg"
+        alt="Cart"
+        style="width: 30px; height: 30px"
+      />
+      <img
+        class="search"
+        src="img/search-24px.svg"
+        alt="search"
+        style="width: 30px; height: 30px"
+      />
       <nav>
         <ul id="navMenu">
           <li><a href="shop.html">Shop</a></li>
@@ -29,16 +44,15 @@
           <link href="navMenu.css" rel="stylesheet" />
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <div class="header">
+        <div class="searchbox">
           <a class="active" href="#html.index"></a>
-          <input type="text" />
+          <input type="text" style="width: 248px; height: 37px" />
         </div>
       </nav>
     </header>
     <main>
       <section>
         <img
-          id="heroBanner"
           src="img/AdobeStock_230762250.jpeg"
           alt="heroBanner"
           style="width: 1920px; height: 556px"
@@ -51,7 +65,9 @@
           or camping. We want to make a reliable jacket that you can use during
           your favorite activity.
         </h2>
-        <button>Shop Now</button>
+        <button id="shopNow" style="width: 260px; height: 50px">
+          Shop Now
+        </button>
       </section>
       <section>
         <h1>Explore our collections</h1>
@@ -68,6 +84,7 @@
         <h2>Women</h2>
         <h3>Men</h3>
       </section>
+
       <section>
         <h1>New arrivals</h1>
       </section>
