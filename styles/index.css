@@ -82,6 +82,10 @@ h6 {
   padding-bottom: 20px;
 }
 
+h7 {
+  font-family: proxima nova;
+}
+
 .containerWomen {
   float: left;
   position: relative;
