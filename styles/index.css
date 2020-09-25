@@ -90,6 +90,12 @@ h2 {
   font-family: montserrat;
   position: relative;
   left: 70px;
+  top: 10px;
+}
+
+h3 {
+  position: relative;
+  top: -55px;
 }
 
 h1,
@@ -113,6 +119,11 @@ h6 {
   padding-bottom: 20px;
 }
 
+h6 {
+  position: relative;
+  top: -20px;
+}
+
 h7 {
   font-family: proxima nova;
 }
@@ -120,11 +131,13 @@ h7 {
 .containerWomen {
   float: left;
   position: relative;
+  top: -50px;
 }
 
 .containerMen {
   float: right;
   position: relative;
+  top: -50px;
 }
 
 .text-women {
@@ -139,4 +152,50 @@ h7 {
   top: 20px;
   right: 570px;
   background-color: none;
+}
+
+.jacket1 {
+  position: relative;
+  left: 50px;
+}
+
+.jacket2 {
+  position: relative;
+  left: 380px;
+  top: -390px;
+}
+
+.text-jacket2 {
+  position: relative;
+  left: 400px;
+  top: -390px;
+}
+
+.jacket3 {
+  position: relative;
+  left: 720px;
+  top: -780px;
+}
+
+.text-jacket3 {
+  position: relative;
+  left: 720px;
+  top: -780px;
+}
+
+.jacket4,
+.text-jacket4 {
+  position: relative;
+  left: 1050px;
+  top: -1200px;
+}
+
+.footer {
+  position: relative;
+  top: -1000px;
+}
+
+.textbox {
+  position: relative;
+  top: 1000px;
 }
