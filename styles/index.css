@@ -4,9 +4,15 @@
   padding: 0;
 }
 
+.logo {
+  position: relative;
+  left: 80px;
+}
+
 .topnav {
   background-color: white;
   overflow: hidden;
+  position: relative;
 }
 
 .topnav a,
@@ -17,32 +23,57 @@ li {
   font-size: 30px;
   font-family: proxima nova;
   list-style-type: none;
-  padding: 32px;
+  padding: 10px;
+  position: relative;
+  left: 244px;
+  top: -45px;
 }
 
 .searchbox {
   width: 248px;
   height: 37px;
   float: left;
+  position: relative;
+  left: 560px;
+  top: -90px;
 }
-.search,
-.profile,
-.cart,
-.logo {
+
+.search {
+  position: relative;
+  left: 170px;
+  top: -37px;
+}
+
+.profile {
+  position: relative;
+  left: 250px;
+  top: -35px;
+}
+.cart {
   float: left;
+  position: relative;
+  left: 370px;
+  top: -32px;
 }
 
 .herobanner {
   position: relative;
+  top: -60px;
 }
 
 .hero-text {
   position: absolute;
   top: 50px;
-  left: 80px;
+  left: 30px;
   background-color: none;
   padding-left: 0px;
   padding-right: 800px;
+}
+
+.shopNow {
+  position: relative;
+  left: 150px;
+  top: 30px;
 }
 
 h1,
