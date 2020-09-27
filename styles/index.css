@@ -192,6 +192,7 @@ h7 {
 
 .footer {
   position: relative;
+  top: -500px;
 }
 
 .textbox {
