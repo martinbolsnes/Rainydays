@@ -75,7 +75,7 @@ h6 {
   color: #0a3641;
   font-family: montserrat;
   position: relative;
-  display: inline;
+  text-align: left;
 }
 h2 {
   font-size: 20px;
