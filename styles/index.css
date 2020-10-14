@@ -22,14 +22,14 @@ li {
   list-style-type: none;
   padding: 10px;
   position: relative;
-  left: 180px;
+  left: 230px;
   top: -45px;
 }
 
 .searchbox {
   display: inline;
   position: relative;
-  left: 850px;
+  left: 950px;
   top: -152px;
 }
 
@@ -41,13 +41,13 @@ li {
 
 .profile {
   position: relative;
-  left: 100px;
+  left: 30px;
   top: 10px;
 }
 .cart {
   float: left;
   position: relative;
-  left: 500px;
+  left: 420px;
   top: 13px;
 }
 
@@ -223,6 +223,8 @@ h7 {
 
 .jacket3 {
   margin-left: 80px;
+  position: relative;
+  top: -5px;
 }
 
 /* .text-jacket3 {
@@ -239,6 +241,8 @@ h7 {
 
 .jacket4 {
   margin-left: 80px;
+  position: relative;
+  top: 5px;
 }
 
 /* .footer {
