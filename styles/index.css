@@ -1,12 +1,15 @@
-body,
-main {
-  width: 980px;
+body {
+  margin: auto;
 }
 
 .topnav {
   display: inline;
   background-color: white;
   position: sticky;
+}
+
+.logo {
+  padding-left: 50px;
 }
 
 a,
@@ -50,33 +53,42 @@ li {
 
 .hero--container {
   background-image: url(../img/AdobeStock_230762250.jpeg);
-  background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 500px;
-  border: solid black 1px;
+  position: relative;
+  height: 450px;
+  top: -140px;
 }
 
 .hero-text {
   background-color: none;
-  padding-left: 0px;
-  padding-right: 800px;
+  margin-right: 800px;
+  position: relative;
+  top: 50px;
 }
 
 .shopNow {
   position: relative;
   left: 150px;
   top: 30px;
-  color: #0a3641;
+  background-color: #0a3641;
+  color: white;
+  border-radius: 6px;
 }
 
-h1,
+h1 {
+  position: relative;
+  left: 50px;
+  font-size: 1.875rem;
+  color: #0a3641;
+  font-family: "montserrat";
+}
+
 h3,
 h6 {
   font-size: 30px;
   color: #0a3641;
   font-family: montserrat;
-  text-align: left;
+  text-align: center;
 }
 h2 {
   font-size: 20px;
@@ -89,7 +101,7 @@ h2 {
 
 h3 {
   position: relative;
-  top: -55px;
+  top: -150px;
 }
 
 h1,
@@ -115,73 +127,91 @@ h6 {
 
 h6 {
   position: relative;
-  top: -20px;
+  top: -200px;
+  right: 0px;
 }
 
 h7 {
   font-family: proxima nova;
 }
 
-.containerWomen {
-  float: left;
+.collections {
+  display: flex;
+  flex-direction: row;
   position: relative;
-  top: -50px;
+  top: -150px;
+  justify-content: center;
+}
+
+.containerWomen {
+  background-image: url(../img/marcus-santos-TeR7ekawHeU-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 650px;
 }
 
 .containerMen {
-  float: right;
-  position: relative;
-  top: -50px;
+  background-image: url(../img/zach-castillo-Lss2BdwBKho-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 650px;
 }
 
 .text-women {
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 500px;
   background-color: none;
 }
 
 .text-men {
   position: absolute;
-  top: 20px;
+  top: -10px;
   right: 570px;
   background-color: none;
 }
 
-.jacket1 {
-  position: relative;
-  left: 50px;
+.newArrivals {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
+
+.jacket1 {
+  width: auto;
+  height: 200px;
+}
+
+/* .text-jacket1 {
+} */
 
 .jacket2 {
-  position: relative;
-  left: 380px;
-  top: -390px;
+  width: auto;
+  height: 200px;
 }
 
-.text-jacket2 {
+/* .text-jacket2 {
   position: relative;
-  left: 400px;
-  top: -390px;
-}
+  left: 0px;
+  top: 0px;
+} */
 
 .jacket3 {
-  position: relative;
-  left: 720px;
-  top: -780px;
+  width: auto;
+  height: 200px;
 }
 
-.text-jacket3 {
+/* .text-jacket3 {
   position: relative;
-  left: 720px;
-  top: -780px;
-}
+  left: 0px;
+  top: 0px;
+} */
 
-.jacket4,
-.text-jacket4 {
-  position: relative;
-  left: 1050px;
-  top: -1200px;
+.jacket4 {
+  width: auto;
+  height: 200px;
 }
 
 .footer {
