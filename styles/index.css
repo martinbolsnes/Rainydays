@@ -153,6 +153,7 @@ h7 {
   background-repeat: no-repeat;
   width: 50%;
   height: 650px;
+  margin-right: 10px;
 }
 
 .containerMen {
@@ -161,6 +162,7 @@ h7 {
   background-repeat: no-repeat;
   width: 50%;
   height: 650px;
+  margin-left: 10px;
 }
 
 .text-women {
@@ -204,7 +206,7 @@ h7 {
 }
 
 .jacket2 {
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 /* .text-jacket2 {
@@ -220,7 +222,7 @@ h7 {
 }
 
 .jacket3 {
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 /* .text-jacket3 {
@@ -236,7 +238,7 @@ h7 {
 }
 
 .jacket4 {
-  margin-left: 70px;
+  margin-left: 80px;
 }
 
 /* .footer {
