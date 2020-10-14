@@ -182,65 +182,54 @@ h7 {
 .newArrivals {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   position: relative;
   top: -260px;
 }
 
 .card1 {
   border: solid black 1px;
-  width: auto;
+  width: 250px;
   height: 400px;
 }
 
 .jacket1 {
-  margin-left: 70px;
+  width: 50%;
+  /* margin-left: 70px; */
 }
-/* .text-jacket1 {
-} */
 
 .card2 {
   border: solid black 1px;
-  width: auto;
+  width: 250px;
   height: 400px;
 }
 
 .jacket2 {
-  margin-left: 80px;
+  width: 50%;
+  /* margin-left: 80px; */
 }
-
-/* .text-jacket2 {
-  position: relative;
-  left: 0px;
-  top: 0px;
-} */
 
 .card3 {
   border: solid black 1px;
-  width: auto;
+  width: 250px;
   height: 400px;
 }
 
 .jacket3 {
-  margin-left: 80px;
+  width: 50%;
+  /* margin-left: 80px; */
   position: relative;
   top: -5px;
 }
 
-/* .text-jacket3 {
-  position: relative;
-  left: 0px;
-  top: 0px;
-} */
-
 .card4 {
   border: solid black 1px;
-  width: auto;
+  width: 250px;
   height: 400px;
 }
 
 .jacket4 {
-  margin-left: 80px;
+  width: 50%;
+  /* margin-left: 80px; */
   position: relative;
   top: 5px;
 }
