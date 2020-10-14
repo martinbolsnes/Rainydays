@@ -1,14 +1,12 @@
-body {
-  width: 980px;
-}
-
+body,
 main {
-  width: 100%;
+  width: 980px;
 }
 
 .topnav {
   display: inline;
   background-color: white;
+  position: sticky;
 }
 
 a,
@@ -20,31 +18,34 @@ li {
   font-family: proxima nova;
   list-style-type: none;
   padding: 10px;
+  position: relative;
+  left: 180px;
+  top: -45px;
 }
 
 .searchbox {
   display: inline;
   position: relative;
-  left: 560px;
-  top: -90px;
+  left: 850px;
+  top: -152px;
 }
 
 .search {
   position: relative;
-  left: 170px;
-  top: -37px;
+  right: 50px;
+  top: 10px;
 }
 
 .profile {
   position: relative;
-  left: 250px;
-  top: -35px;
+  left: 100px;
+  top: 10px;
 }
 .cart {
   float: left;
   position: relative;
-  left: 370px;
-  top: -32px;
+  left: 500px;
+  top: 13px;
 }
 
 .hero--container {
