@@ -176,20 +176,31 @@ h7 {
 .newArrivals {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
+  position: relative;
+  top: -260px;
+}
+
+.card1 {
+  border: solid black 1px;
+  width: auto;
+  height: 400px;
 }
 
 .jacket1 {
-  width: auto;
-  height: 200px;
+  margin-left: 70px;
 }
-
 /* .text-jacket1 {
 } */
 
-.jacket2 {
+.card2 {
+  border: solid black 1px;
   width: auto;
-  height: 200px;
+  height: 400px;
+}
+
+.jacket2 {
+  margin-left: 70px;
 }
 
 /* .text-jacket2 {
@@ -198,9 +209,14 @@ h7 {
   top: 0px;
 } */
 
-.jacket3 {
+.card3 {
+  border: solid black 1px;
   width: auto;
-  height: 200px;
+  height: 400px;
+}
+
+.jacket3 {
+  margin-left: 70px;
 }
 
 /* .text-jacket3 {
@@ -209,12 +225,17 @@ h7 {
   top: 0px;
 } */
 
-.jacket4 {
+.card4 {
+  border: solid black 1px;
   width: auto;
-  height: 200px;
+  height: 400px;
 }
 
-.footer {
+.jacket4 {
+  margin-left: 70px;
+}
+
+/* .footer {
   position: relative;
   top: -800px;
 }
@@ -222,4 +243,4 @@ h7 {
 .textbox {
   position: relative;
   top: 800px;
-}
+} */
