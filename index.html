@@ -3,185 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="This is a ecommerce website for Rainydays"
-    />
-    <title>Rainydays</title>
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="styles/index.css"
-      media="screen"
-    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Grid Practice</title>
   </head>
   <body>
     <header>
-      <div class="topnav">
-        <img class="logo" href="#home" src="img/Logo.svg" />
+      <div class="header">
+        <img class="logo" src="img/Logo.svg" alt="Rainydays Logo" />
         <nav>
           <ul>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a>Shop</a></li>
+            <li><a>About us</a></li>
+            <li><a>Contact</a></li>
           </ul>
         </nav>
         <div class="searchbox">
           <a class="active" href="#html.index"></a>
           <input type="text" style="width: 248px; height: 37px" />
-          <img
-            class="search"
-            src="img/search-24px.svg"
-            alt="search"
-            style="width: 30px; height: 30px"
-          />
-
-          <img
-            class="profile"
-            src="img/person-24px.svg"
-            alt="User profile"
-            style="width: 35px; height: 35px"
-          />
-          <img
-            class="cart"
-            src="img/shopping_cart-24px.svg"
-            alt="Cart"
-            style="width: 30px; height: 30px"
-          />
         </div>
+        <img class="search" src="img/search-24px.svg" alt="search" />
+
+        <img class="profile" src="img/person-24px.svg" alt="User profile" />
+        <img class="cart" src="img/shopping_cart-24px.svg" alt="Cart" />
       </div>
     </header>
     <main>
-      <section>
-        <div class="hero--container">
-            <div class="hero-text">
-              <h1>Pushing the Comfort Zone</h1>
-              <h2>
-                We at Rainydays are constantly pushing ourselves to produce the
-                most comfortable jacket no matter what activity. Our goal is to
-                create a selection of jackets that you can use whether you are
-                hiking, skiing or camping. We want to make a reliable jacket
-                that you can use during your favorite activity.
-              </h2>
-              <button
-                class="shopNow"
-                type="button"
-              >
-                Shop Now
-              </button>
-            </div>
-          </div>
+      <section class="herobanner">
+        <h1>Pushing the Comfort Zone</h1>
+        <p>
+          We at Rainydays are constantly pushing ourselves to produce the most
+          comfortable jacket no matter what activity. Our goal is to create a
+          selection of jackets that you can use whether you are hiking, skiing
+          or camping. We want to make a reliable jacket that you can use during
+          your favorite activity.
+        </p>
+        <button class="shopNow" type="button">Shop Now</button>
+      </section>
+      <h2>Explore our collections</h2>
+      <section class="ourCollections">
+        <div class="ourCollections__women">
+          <h3 class="ourCollections__women--heading">Women</h3>
+        </div>
+        <div class="ourCollections__men">
+          <h3 class="ourCollections__men--heading">Men</h3>
         </div>
       </section>
-
-      <section>
-        <h3>Explore our collections</h3>
-        <div class="collections">
-        <div class="containerWomen">
-         
-          <div class="text-women">
-            <h4>Women</h4>
-          </div>
+      <h2>New Arrivals</h2>
+      <section class="newArrivals">
+        <div class="card1">
+          <img class="jacket1" src="img/Jakke grønn2.png" />
+          <h3 class="jacket__gender">Mens</h3>
+          <h4 class="jacket__name">Ystetind</h4>
+          <h5 class="jacket__prize">2499 NOK</h5>
+          <img class="jacket__rating" src="img/Rating.svg" />
         </div>
-        <div class="containerMen">
-          <div class="text-men">
-            <h5>Men</h5>
-          </div>
+        <div class="card2">
+          <img class="jacket2" src="img/Jakke gul2.png" />
+          <h3 class="jacket__gender">Women</h3>
+          <h4 class="jacket__name">Romsdalen</h4>
+          <h5 class="jacket__prize">2499 NOK</h5>
+          <img class="jacket__rating" src="img/Rating.svg" />
         </div>
+        <div class="card3">
+          <img class="jacket3" src="img/Jakke rød2.png" />
+          <h3 class="jacket__gender">Mens</h3>
+          <h4 class="jacket__name">Rauma</h4>
+          <h5 class="jacket__prize">2449 NOK</h5>
+          <img class="jacket__rating" src="img/Rating.svg" />
+        </div>
+        <div class="card4">
+          <img class="jacket4" src="img/Jakke blå.png" />
+          <h3 class="jacket__gender">Mens</h3>
+          <h4 class="jacket__name">Blånebba</h4>
+          <h5 class="jacket__prize">2349 NOK</h5>
+          <img class="jacket__rating" src="img/Rating.svg" />
         </div>
       </section>
-
-      <section>
-        <h6>New arrivals</h6>
-        <div class="newArrivals">
-          <div class="card1">
-            <img class="jacket1" src="img/Jakke grønn2.png" alt="Green Jacket">
-            <div class="text--card1">
-              <p class="jacket--gender">Mens</p>
-              <p class="jacket--name">Ystetind</p>
-              <p class="jacket--prize">2499 NOK</p>
-              <div class="rating">
-                <img src="img/Rating.svg">
-              </div>
-            </div>
-          </div>
-          <div class="card2">
-            <img class="jacket2" src="img/Jakke gul2.png" alt="Yellow Jacket">
-            <div class="text--card1">
-              <p class="jacket--gender">Mens</p>
-              <p class="jacket--name">Ystetind</p>
-              <p class="jacket--prize">2499 NOK</p>
-              <div class="rating">
-                <img src="img/Rating.svg">
-              </div>
-          </div>
-          <div class="card3">
-            <img class="jacket3" src="img/Jakke rød2.png" alt="Red Jacket">
-            <div class="text--card1">
-              <p class="jacket--gender">Mens</p>
-              <p class="jacket--name">Ystetind</p>
-              <p class="jacket--prize">2499 NOK</p>
-              <div class="rating">
-                <img src="img/Rating.svg">
-              </div>
-          </div>
-          <div class="card4">
-            <img class="jacket3" src="img/Jakke blå.png" alt="Blue Jacket">
-            <div class="text--card1">
-              <p class="jacket--gender">Mens</p>
-              <p class="jacket--name">Ystetind</p>
-              <p class="jacket--prize">2499 NOK</p>
-              <div class="rating">
-                <img src="img/Rating.svg">
-              </div>
-          </div>
-          
-      
-          
-          
-          
-        </div>
-      </section> 
     </main>
-    <!-- <footer class="footer">
-      <div>Sign up to our newsletters</div>
-      <div class="footer">
-        <a class="active" href="#html.index"></a>
-        <input class="textbox" type="text" placeholder="name@example.com" />
-      </div>
-      <button type="submit">Send</button>
-      <div>Where to find us</div>
-      <img
-        src="img/locationPin.svg"
-        alt="locationPin"
-        style="width: 21px; height: 29px"
+    <footer class="footer">
+      <p class="signUpNewsletter__text">Sign up to our newsletters</p>
+      <input
+        class="signUpNews__textbox"
+        type="text"
+        placeholder="name@example.com"
       />
-      <div>Street name & numer, Zip Code & City</div>
-      <div>Questions? Contact us or check out FAQ</div>
-      <img
+      <button class="signUpNews__button" type="submit">Send</button>
+      <p class="location__heading">Where to find us</p>
+      <img class="location__pin" src="img/locationPin.svg" alt="locationPin" />
+      <p class="location__text">Street name & numer, Zip Code & City</div>
+      <p class="faq__heading">Questions?</p><p class="faq__text">Contact us or check out FAQ</p>
+      <img class="contact__mail"
         src="img/mail_outline-24px.svg"
         alt="contact mail"
-        style="width: 40px; height: 40px"
       />
-      <img
+      <img class="contact__phone"
         src="img/call-24px.svg"
         alt="contact phone"
-        style="width: 40px; height: 40px"
       />
-      <img
+      <img class="contact__instagram"
         src="img/instagram-brands.svg"
         alt="instagram"
-        style="width: 40px; height: 40px"
       />
-      <img
+      <img class="contact__facebook"
         src="img/facebook-brands.svg"
         alt="facebook"
-        style="width: 40px; height: 40px"
       />
-      <a href="">Shipping & Return</a>
-      <a href="">Terms & Conditions</a>
-      <a href="">Size Guide</a>
-    </footer> -->
+      <a class="shipping" href="">Shipping & Return</a>
+      <a class="terms" href="">Terms & Conditions</a>
+      <a class="sizeGuide" href="">Size Guide</a>  
+    </footer>
   </body>
-</html> 
+</html>
