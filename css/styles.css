@@ -19,9 +19,9 @@ h1 {
 
 p {
   position: absolute;
-  margin-left: 120px;
-  margin-top: 150px;
-  margin-right: 730px;
+  width: 45%;
+  left: 120px;
+  top: 120px;
   line-height: 25px;
   font-family: "montserrat";
   font-size: 1.25rem;
@@ -51,6 +51,7 @@ h2 {
 
 header {
   grid-area: header;
+  position: relative;
   border-bottom: solid black 1px;
   width: 100%;
   height: 120px;
@@ -69,22 +70,21 @@ li,
 a {
   text-decoration: none;
   display: inline-block;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  margin-right: 25px;
-  margin-top: 15px;
   color: black;
   font-family: "proxima nova";
   font-size: 1.875rem;
+  position: relative;
+  left: 150px;
+  top: 5px;
+  margin-left: 10px;
 }
 
 .searchbox {
   display: flex;
   justify-content: flex-end;
-  position: relative;
-  top: -70px;
-  right: 230px;
+  position: absolute;
+  left: 950px;
+  top: 42px;
 }
 
 .search {
@@ -113,12 +113,14 @@ a {
 
 .herobanner {
   grid-area: herobanner;
+  position: relative;
   width: 100%;
   height: 500px;
   display: flex;
   background-image: url(../img/AdobeStock_230762250.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .ourCollections {
@@ -137,6 +139,7 @@ a {
   background-image: url(../img/marcus-santos-TeR7ekawHeU-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .ourCollections__men {
@@ -146,6 +149,7 @@ a {
   background-image: url(../img/zach-castillo-Lss2BdwBKho-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .newArrivals {
@@ -371,4 +375,34 @@ a {
   margin-left: 1150px;
   margin-right: 0px;
   margin-top: 160px;
+}
+
+@media (max-width: 1200px) {
+  header {
+    width: 100%;
+  }
+
+  .herobanner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  header {
+    width: 100%;
+  }
+
+  .herobanner {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    width: 100%;
+  }
+
+  .herobanner {
+    width: 100%;
+  }
 }
