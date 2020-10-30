@@ -1,0 +1,417 @@
+main {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "herobanner"
+    "ourCollections__header"
+    "ourCollections"
+    "newArrivals__header"
+    "newArrivals"
+    "footer";
+}
+
+.herobanner {
+  grid-area: herobanner;
+  height: 550px;
+  width: 100%;
+  background-image: url(../img/herobanner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.herobanner__container {
+  width: 60%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.herobanner__heading {
+  font-family: "montserrat";
+  font-size: 2rem;
+  font-weight: bold;
+  color: #0a3641;
+}
+
+.herobanner__text,
+.herobanner__button {
+  font-family: "proxima nova";
+}
+
+.herobanner__text {
+  width: 67%;
+  font-weight: bold;
+  margin-left: 55px;
+}
+
+.herobanner__button {
+  width: 150px;
+  height: 40px;
+  background-color: #0a3641;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.herobanner__button:hover {
+  background-color: white;
+  color: #0a3641;
+  border: solid #0a3641 2px;
+  cursor: pointer;
+}
+
+.ourCollections__header {
+  grid-area: ourCollections__header;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourCollections {
+  grid-area: ourCollections;
+  height: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h2 {
+  display: flex;
+  flex-direction: column;
+  font-family: "montserrat";
+  color: #0a3641;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.women__collection {
+  background-image: url(../img/women__collection.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.mens__collection {
+  background-image: url(../img/mens__collection.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 100%;
+  margin-left: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.women__collection--text,
+.mens__collection--text {
+  color: white;
+  font-family: "montserrat";
+  font-size: 2.5rem;
+}
+
+.women__collection--text {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.mens__collection--text {
+  margin-left: 20px;
+}
+
+.newArrivals__header {
+  grid-area: newArrivals__header;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newArrivals {
+  grid-area: newArrivals;
+  height: 400px;
+  display: flex;
+  border: none;
+}
+
+.newArrivals__arrow--left,
+.newArrivals__arrow--right {
+  height: 7%;
+  display: flex;
+  align-self: center;
+  margin: 2px;
+}
+
+.newArrivals__arrow--right {
+  transform: rotate(180deg);
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  border: none;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "proxima nova";
+  color: #0a3641;
+}
+
+.jacket1,
+.jacket2,
+.jacket3,
+.jacket4 {
+  width: 50%;
+  height: 65%;
+  margin: auto;
+  margin-top: 0px;
+}
+
+.jacket__gender,
+.jacket__name,
+.jacket__prize,
+.jacket__rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.jacket__gender,
+.jacket__name,
+.jacket__prize {
+  margin-left: 20px;
+  margin-top: 2px;
+}
+
+.jacket__name {
+  font-size: 1.2rem;
+}
+
+.jacket__prize {
+  font-size: 1.4rem;
+}
+
+.jacket__rating {
+  align-self: flex-end;
+  margin-top: -85px;
+  margin-right: 2px;
+  width: 120px;
+  height: 39px;
+}
+
+@media (max-width: 1440px) {
+  .logo-991,
+  .logo-767 {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    width: 100%;
+    height: 50px;
+  }
+  .logo-1440,
+  .logo-767 {
+    display: none;
+  }
+
+  .logo-991 {
+    display: block;
+    margin-top: -20px;
+  }
+
+  .hamburger {
+    display: block;
+    margin-right: 50px;
+  }
+
+  nav,
+  ul,
+  .cart__icon,
+  .profile__icon {
+    display: none;
+  }
+
+  .herobanner {
+    height: 300px;
+    width: 100%;
+  }
+
+  .herobanner__container {
+    width: 70%;
+  }
+
+  .herobanner__heading {
+    font-size: 1.8rem;
+  }
+
+  .herobanner__text {
+    display: none;
+  }
+
+  .ourCollections {
+    height: 400px;
+  }
+
+  .women__collection--text,
+  .mens__collection--text {
+    font-size: 2rem;
+  }
+
+  .newArrivals {
+    height: 230px;
+    width: 100%;
+  }
+
+  .jacket__gender,
+  .jacket__name,
+  .jacket__prize {
+    margin-left: 15px;
+    margin-top: 0px;
+  }
+
+  .jacket__gender {
+    font-size: 0.8rem;
+  }
+
+  .jacket__name {
+    font-size: 1rem;
+    margin-top: -5px;
+  }
+
+  .jacket__prize {
+    font-size: 1.2rem;
+    margin-top: -15px;
+  }
+
+  .jacket__rating {
+    width: 70px;
+    margin-top: -75px;
+  }
+}
+
+@media (max-width: 767px) {
+  main {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "herobanner"
+      "newArrivals__header"
+      "newArrivals"
+      "ourCollections__header"
+      "ourCollections"
+      "footer";
+  }
+  .logo-1440,
+  .logo-991 {
+    display: none;
+  }
+
+  .logo-767 {
+    display: block;
+    margin-top: -15px;
+  }
+
+  header {
+    height: 50px;
+  }
+
+  .hamburger {
+    margin-right: 20px;
+  }
+
+  nav,
+  ul,
+  .cart__icon,
+  .profile__icon {
+    display: none;
+  }
+
+  .herobanner {
+    height: 150px;
+  }
+
+  .herobanner__container {
+    width: 70%;
+    margin-left: 5px;
+  }
+
+  .herobanner__heading {
+    font-size: 1rem;
+  }
+
+  .herobanner__button {
+    width: 100px;
+    height: 20px;
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .ourCollections {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .women__collection,
+  .mens__collection {
+    width: 75%;
+    margin: 0;
+  }
+
+  .women__collection--text,
+  .mens__collection--text {
+    font-size: 1.5rem;
+  }
+
+  .newArrivals {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .newArrivals__arrow--left,
+  .newArrivals__arrow--right {
+    display: none;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 50%;
+  }
+}

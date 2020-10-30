@@ -1,0 +1,67 @@
+.checkout2__main {
+  display: grid;
+  grid-template-areas:
+    "checkout__header checkout__header"
+    "yourCart shippingInfo__container";
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  font-family: "proxima nova";
+}
+
+.shippingInfo__container {
+  grid-area: shippingInfo__container;
+  height: fit-content;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.shippingInfo {
+  width: 100%;
+}
+
+.shippingInfo__heading {
+  color: black;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+.shipping__options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#option1,
+#option2,
+#option3 {
+  margin-top: 20px;
+}
+
+.shipping__button {
+  background-color: #0a3641;
+  color: white;
+  border-radius: 3px;
+  width: 30%;
+  margin-top: 20px;
+}
+
+.shipping__button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .checkout2__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .yourCart {
+    height: 100%;
+  }
+}

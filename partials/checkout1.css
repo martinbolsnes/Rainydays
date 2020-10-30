@@ -1,0 +1,210 @@
+.checkout1__main {
+  display: grid;
+  grid-template-areas:
+    "checkout__header checkout__header"
+    "yourCart paymentInfo__container";
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  font-family: "proxima nova";
+}
+
+.checkout__header {
+  grid-area: checkout__header;
+  height: 100px;
+  display: flex;
+  flex: 1 100%;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout__header {
+  color: #0a3641;
+}
+
+.yourCart {
+  grid-area: yourCart;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.yourCart__img,
+.yourCart__info {
+  display: flex;
+  height: 100%;
+  width: 50%;
+}
+
+.yourCart__img {
+  flex-direction: column;
+  align-items: center;
+}
+
+.yourCart__img--heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.youCart__img--product {
+  height: 45%;
+  width: 50%;
+}
+
+.yourCart__info {
+  flex-direction: column;
+}
+
+.yourCart__info--gender,
+.yourCart__info--name,
+.yourCart__info--color,
+.yourCart__info--size,
+.yourCart__quantity--heading,
+.yourCart__prize--text,
+.yourCart__prize--amount,
+.yourCart__quantity--amount,
+.newAccount__heading,
+.billing__heading {
+  color: black;
+}
+
+.yourCart__info--name,
+.yourCart__quantity--heading,
+.yourCart__quantity--amount,
+.yourCart__prize--text,
+.yourCart__prize--amount,
+.newAccount__heading,
+.billing__heading {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.yourCart__quantity,
+.yourCart__prize,
+.yourCart__info--gender {
+  margin-top: 60px;
+}
+
+.yourCart__info--color,
+.yourCart__info--size {
+  margin: 0;
+}
+
+.yourCart__quantity,
+.yourCart__prize {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.quantity__button {
+  width: 15%;
+}
+
+.paymentInfo__container {
+  grid-area: paymentInfo__container;
+  height: fit-content;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.newAccount {
+  border-bottom: solid gray 1px;
+}
+
+.newAccount__heading {
+  margin-top: 40px;
+}
+
+.newAccount__button {
+  margin-bottom: 30px;
+  background-color: #0a3641;
+  color: white;
+  width: 50%;
+  border-radius: 3px;
+}
+
+.noAccount {
+  color: gray;
+}
+
+.billing {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.billing__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.billing__info--name,
+.billing__info--address,
+.billing__info--zip,
+.billing__info--country,
+.billing__info--email {
+  margin-top: 10px;
+  width: 50%;
+  height: 20px;
+  background-color: #f0f0f0;
+  color: black;
+}
+
+.billing__button {
+  background-color: #0a3641;
+  color: white;
+  width: 25%;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+.billing__button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .youCart__img--product {
+    width: 50%;
+    height: 35%;
+  }
+}
+
+@media (max-width: 767px) {
+  .checkout1__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .yourCart {
+    height: fit-content;
+    border-bottom: solid lightgray 1px;
+  }
+
+  .yourCart__info--name,
+  .yourCart__quantity--heading,
+  .yourCart__quantity--amount,
+  .yourCart__prize--text,
+  .yourCart__prize--amount,
+  .newAccount__heading,
+  .billing__heading {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  .yourCart__img--heading {
+    font-size: 1rem;
+  }
+
+  .paymentInfo__container {
+    margin-top: 30px;
+  }
+}

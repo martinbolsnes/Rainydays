@@ -1,0 +1,278 @@
+.product__main {
+  display: grid;
+  grid-template-areas:
+    "product__img--container"
+    "product__info--container";
+  display: flex;
+  flex-direction: row;
+  font-family: "proxima nova";
+}
+
+.product__img--container,
+.product__info--container {
+  width: 50%;
+  height: fit-content;
+}
+
+.product__img--container {
+  grid-area: product__img-container;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product__info--container {
+  grid-area: product__info-container;
+  display: flex;
+  flex-direction: column;
+}
+
+.product__img {
+  width: 50%;
+  height: 65%;
+}
+
+.product__arrow--left,
+.product__arrow--right {
+  width: 5%;
+  height: 5%;
+  margin: 10px;
+}
+
+.product__arrow--right {
+  transform: rotate(180deg);
+}
+
+.product__info--gender,
+.product__info--name,
+.product__info--prize {
+  color: #0a3641;
+  margin-top: 5px;
+}
+
+.product__info--gender {
+  font-size: 1rem;
+  margin-top: 60px;
+}
+
+.product__info--name {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.product__info--prize {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.product__info--sizes,
+.product__info--colors {
+  display: flex;
+  flex-direction: row;
+}
+
+.colorbox1,
+.colorbox2,
+.colorbox3,
+.colorbox4 {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  border: solid black 1px;
+  border-radius: 2px;
+}
+
+.colorbox1 {
+  background-color: #656549;
+}
+
+.colorbox2 {
+  background-color: #8d192b;
+}
+
+.colorbox3 {
+  background-color: #202c44;
+}
+
+.colorbox4 {
+  background-color: #fecc25;
+}
+
+.sizebox1,
+.sizebox2,
+.sizebox3,
+.sizebox4 {
+  width: 45px;
+  height: 45px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  border: solid #0a3641 2px;
+  border-radius: 4px;
+  color: #0a3641;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sizeGuide {
+  text-decoration: underline;
+  color: #0a3641;
+}
+
+.product__info--text {
+  width: 80%;
+}
+
+.product__details {
+  font-weight: bolder;
+  margin-right: 5px;
+}
+
+.readMore {
+  text-decoration: underline;
+}
+
+.addToCart {
+  width: 30%;
+  height: 60px;
+  background-color: #0a3641;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.addToCart:hover {
+  background-color: white;
+  color: #0a3641;
+  border: solid #0a3641 3px;
+  cursor: pointer;
+}
+
+.product__reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.reviews__text {
+  color: #0a3641;
+  font-size: 1.2rem;
+}
+
+.reviews__stars {
+  width: 200px;
+  height: 45px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.reviews__table {
+  width: 80%;
+}
+
+.product__reviews {
+  border-top: solid gray 2px;
+  border-bottom-width: 80%;
+}
+
+.giveReview,
+.readReview {
+  width: 40%;
+  height: 50px;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.giveReview {
+  background-color: #0a3641;
+  color: white;
+  margin-right: 5px;
+}
+
+.readReview {
+  background-color: white;
+  color: #0a3641;
+  border: solid #0a3641 3px;
+}
+
+@media (max-width: 991px) {
+  .product__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product__info--container,
+  .product__img--container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .product__info--gender {
+    font-size: 0.9rem;
+  }
+
+  .product__info--name {
+    font-size: 1.3rem;
+  }
+
+  .product__info--prize {
+    font-size: 1.5rem;
+  }
+
+  .product__details {
+    font-size: smaller;
+  }
+
+  .sizebox1,
+  .sizebox2,
+  .sizebox3,
+  .sizebox4 {
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+  }
+
+  .colorbox1,
+  .colorbox2,
+  .colorbox3,
+  .colorbox4 {
+    width: 15px;
+    height: 15px;
+  }
+
+  .addToCart {
+    font-size: 0.9rem;
+    width: 35%;
+    height: 40px;
+  }
+
+  .reviews__text {
+    font-size: 0.9rem;
+  }
+
+  .reviews__stars {
+    width: 150px;
+    height: 35px;
+    margin-top: 5px;
+  }
+
+  .giveReview,
+  .readReview {
+    width: 45%;
+    height: 40px;
+    font-size: 0.9rem;
+  }
+
+  .reviews__table {
+    width: 90%;
+  }
+}

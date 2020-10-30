@@ -1,0 +1,96 @@
+.about__main {
+  display: grid;
+  grid-template-areas:
+    "aboutpage__logo aboutpage__img"
+    "about aboutpage__img";
+  font-family: "proxima nova";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 700px;
+  width: 100%;
+}
+
+.about {
+  grid-area: about;
+  flex: 1;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.about__text {
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+.aboutpage__logo {
+  grid-area: aboutpage__logo;
+  flex: 1;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutpage__logo--img {
+  width: 80%;
+  margin-left: -60px;
+}
+
+.aboutpage__img {
+  grid-area: aboutpage__img;
+  flex: 2 100%;
+  display: flex;
+  width: 45%;
+  height: 100%;
+  background-image: url(../img/pexels-andrew-neel-2026422.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 991px) {
+  .about__main {
+    height: 500px;
+  }
+
+  .about__text {
+    font-size: 1rem;
+    width: 70%;
+    margin-top: -50px;
+  }
+
+  .aboutpage__logo--img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .about,
+  .aboutpage__logo {
+    width: 100%;
+  }
+
+  .aboutpage__logo__img,
+  .about__text {
+    width: 80%;
+    margin: auto;
+  }
+
+  .aboutpage__logo--img {
+    margin-left: -30px;
+  }
+}

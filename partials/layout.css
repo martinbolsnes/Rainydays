@@ -1,0 +1,13 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h3 {
+  color: white;
+  font-family: "montserrat";
+  font-size: 1.7rem;
+}

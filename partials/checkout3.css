@@ -1,0 +1,82 @@
+.checkout3__main {
+  display: grid;
+  grid-template-areas:
+    "checkout__header checkout__header"
+    "yourCart payment__container";
+  display: flex;
+  flex-wrap: wrap;
+  height: fit-content;
+  font-family: "proxima nova";
+}
+
+.payment__container {
+  grid-area: payment__container;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.payment {
+  width: 100%;
+}
+
+.payment__options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment__heading {
+  color: black;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+.payment__options--img {
+  width: 30%;
+}
+
+.payment__options--name,
+.payment__options--cardnumber,
+.payment__options--expireDate,
+.payment__options--ccv {
+  width: 40%;
+  height: 20px;
+  background-color: #f0f0f0;
+  color: black;
+  margin-top: 10px;
+}
+
+.payment__button {
+  background-color: #0a3641;
+  color: white;
+  width: 30%;
+  height: 25px;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.payment__button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .payment__button {
+    width: 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .checkout3__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .yourCart {
+    height: 100%;
+    margin-right: 10px;
+  }
+}

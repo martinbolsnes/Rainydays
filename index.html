@@ -3,96 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="This is a ecommerce website for Rainysays">
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="description" content="This is the home page for Rainydays">
+    <link rel="stylesheet" href="partials/main.css"/>
+    <script
+      src="https://kit.fontawesome.com/aaba5ad25b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Rainydays</title>
+    <link rel="icon" href="img/Favicon.png" type="image/x-icon">
   </head>
   <body>
     <header>
-      <div class="header">
-        <img class="logo" src="img/Logo.svg" alt="Rainydays Logo" />
-        <nav>
-          <ul>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="aboutUs.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="searchbox">
-          <a class="active" href="#html.index"></a>
-          <input type="text" style="width: 248px; height: 37px" />
-        </div>
-        <img class="search" src="img/search-24px.svg" alt="search" />
-
-        <img class="profile" src="img/person-24px.svg" alt="User profile" />
-        <img class="cart" src="img/shopping_cart-24px.svg" alt="Cart" />
+      <div class="logo">
+          <img class="logo-1440" src="img/Logo.svg" alt="Rainydays Logo">
+          <img class="logo-991" src="img/Logo-991px.svg" alt="Rainydays Logo">
+          <img class="logo-767" src="img/Logo-767px.svg" alt="Rainydays Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <img class="profile__icon" src="img/person-24px.svg" alt="Profile icon" />
+        <a href="checkout1.html"><img class="cart__icon" src="img/shopping_cart-24px.svg" alt="Cart icon"/></a>
+      </div>
+      <div class="hamburger"><i class="fas fa-bars"></i>
       </div>
     </header>
     <main>
       <section class="herobanner">
-        <h1>Pushing the Comfort Zone</h1>
-        <p>
-          We at Rainydays are constantly pushing ourselves to produce the most
-          comfortable jacket no matter what activity. Our goal is to create a
-          selection of jackets that you can use whether you are hiking, skiing
-          or camping. We want to make a reliable jacket that you can use during
-          your favorite activity.
-        </p>
-        <button class="shopNow" type="button">Shop Now</button>
+        <div class="herobanner__container">
+          <h1 class="herobanner__heading">PUSHING THE COMFORT ZONE</h1>
+          <p class="herobanner__text">
+            We at Rainydays are constantly pushing ourselves to produce 
+            the most comfortable jacket no matter what activity. 
+            Our goal is to create a selection of jackets that you can use 
+            whether you are hiking, skiing or camping. We want to make a 
+            reliable jacket that you can use during your favorite activity.  
+          </p>
+          <form action="shop.html">
+          <button class="herobanner__button"> Shop Now </button>
+        </form>
+        </div>
       </section>
-      <!-- <h2>Explore our collections</h2>
+      <h2 class="ourCollections__header">Explore our Collections</h2> 
       <section class="ourCollections">
-        <div class="ourCollections__women">
-          <h3 class="ourCollections__women--heading">Women</h3>
+        <div class="women__collection">
+          <div class="women__collection--heading">
+            <a href="shop.html"><h3 class="women__collection--text">Women</h3></a>
+          </div>
         </div>
-        <div class="ourCollections__men">
-          <h3 class="ourCollections__men--heading">Men</h3>
+          <div class="mens__collection">
+            <div class="mens__collection--heading">
+            <a href="shop.html"><h3 class="mens__collection--text">Men</h3></a>
+          </div>
         </div>
       </section>
-      <h2>New Arrivals</h2>
-      <section class="newArrivals">
+      <h2 class="newArrivals__header">New Arrivals</h2>
+      <section class="newArrivals"> 
+        <img class="newArrivals__arrow--left" src="img/PictureArrowL@2x.jpg" alt="Arrow icon">
         <div class="card1">
-          <img class="jacket1" src="img/Jakke grønn2.png" />
-          <h3 class="jacket__gender">Mens</h3>
-          <h4 class="jacket__name">Ystetind</h4>
-          <h5 class="jacket__prize">2499 NOK</h5>
-          <img class="jacket__rating" src="img/Rating.svg" />
+          <img class="jacket1" src="img/Jakkegrønn2.png" alt="Green Jacket">
+          <a href="product.html"><h4 class="jacket__gender">Mens</h4></a>
+          <h5 class="jacket__name">Ystetind</h5>
+          <h6 class="jacket__prize">2499 NOK</h6>
+          <img class="jacket__rating" src="img/Rating.svg" alt="Rating icon"/>
         </div>
         <div class="card2">
-          <img class="jacket2" src="img/Jakke gul2.png" />
-          <h3 class="jacket__gender">Women</h3>
-          <h4 class="jacket__name">Romsdalen</h4>
-          <h5 class="jacket__prize">2499 NOK</h5>
-          <img class="jacket__rating" src="img/Rating.svg" />
+          <img class="jacket2" src="img/Jakkerød2.png" alt="Red Jacket">
+          <h4 class="jacket__gender">Women</h4>
+          <h5 class="jacket__name">Romsdalen</h5>
+          <h6 class="jacket__prize">2499 NOK</h6>
+          <img class="jacket__rating" src="img/Rating.svg" alt="Rating icon"/>
         </div>
         <div class="card3">
-          <img class="jacket3" src="img/Jakke rød2.png" />
-          <h3 class="jacket__gender">Mens</h3>
-          <h4 class="jacket__name">Rauma</h4>
-          <h5 class="jacket__prize">2449 NOK</h5>
-          <img class="jacket__rating" src="img/Rating.svg" />
+          <img class="jacket3" src="img/Jakkegul2.png" alt="Yellow Jacket">
+          <h4 class="jacket__gender">Mens</h4>
+          <h5 class="jacket__name">Rauma</h5>
+          <h6 class="jacket__prize">2449 NOK</h6>
+          <img class="jacket__rating" src="img/Rating.svg" alt="Rating icon"/>
         </div>
         <div class="card4">
-          <img class="jacket4" src="img/Jakke blå.png" />
-          <h3 class="jacket__gender">Mens</h3>
-          <h4 class="jacket__name">Blånebba</h4>
-          <h5 class="jacket__prize">2349 NOK</h5>
-          <img class="jacket__rating" src="img/Rating.svg" />
+          <img class="jacket4" src="img/Jakkeblå.png" alt="Blue Jacket">
+          <h4 class="jacket__gender">Mens</h4>
+          <h5 class="jacket__name">Blånebba</h5>
+          <h6 class="jacket__prize">2349 NOK</h6>
+          <img class="jacket__rating" src="img/Rating.svg" alt="Rating icon"/>
         </div>
+        <img class="newArrivals__arrow--right" src="img/PictureArrowL@2x.jpg" alt="Arrow icon">
       </section>
     </main>
-    <footer class="footer">
-      <p class="signUpNewsletter__text">Sign up to our newsletters</p>
+    <footer>
+     <section class="footer__container1">
+       <div class="signUpNewsletter">
+       <p class="signUpNewsletter__text">Sign up to our newsletters</p>
       <input
         class="signUpNews__textbox"
         type="text"
         placeholder="name@example.com"
       />
-      <button class="signUpNews__button" type="submit">Send</button>
+      <button class="signUpNewsletter__button" type="submit">Send</button>
+      </div>
+     <div class="location">
       <p class="location__heading">Where to find us</p>
       <img class="location__pin" src="img/locationPin.svg" alt="locationPin" />
-      <p class="location__text">Street name & numer, Zip Code & City</div>
-      <p class="faq__heading">Questions?</p><p class="faq__text">Contact us or check out FAQ</p>
+      <p class="location__text">Street name & numer, Zip Code & City</p>
+      </div>
+     <div class="contact">
       <img class="contact__mail"
         src="img/mail_outline-24px.svg"
         alt="contact mail"
@@ -109,9 +130,18 @@
         src="img/facebook-brands.svg"
         alt="facebook"
       />
-      <!-- <a class="shipping" href="">Shipping & Return</a>
-      <a class="terms" href="">Terms & Conditions</a>
-      <a class="sizeGuide" href="">Size Guide</a>   -->
-    </footer> 
+     </div>
+     </section>
+  <section class="footer__container2">
+      <div class="faq">
+      <p class="faq__heading">Questions?</p><p class="faq__text">Contact us or check out FAQ</p>
+    </div>
+    <div class="footer__links">
+      <a class="footer__links--shipping" href="">Shipping & Return</a>
+      <a class="footer__links--terms" href="">Terms & Conditions</a>
+      <a class="footer__links--sizeGuide" href="">Size Guide</a> 
+    </div> 
+  </section>
+    </footer>
   </body>
 </html>

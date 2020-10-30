@@ -1,0 +1,85 @@
+footer {
+  grid-area: footer;
+  height: 250px;
+  border-top: solid #0a3641 1px;
+  font-family: "proxima nova";
+  font-size: 1rem;
+  color: #0a3641;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.footer__container1,
+.footer__container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.footer__container2 {
+  margin-top: -20px;
+}
+
+.signUpNewsletter,
+.faq {
+  margin-left: 40px;
+}
+
+.signUpNewsletter__button {
+  background-color: #0a3641;
+  color: white;
+  border-radius: 2px;
+}
+
+.location {
+  text-align: center;
+}
+
+.contact,
+.footer__links {
+  margin-right: 40px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+}
+
+.contact__mail,
+.contact__phone,
+.contact__instagram,
+.contact__facebook {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    height: 500px;
+    font-size: 0.8rem;
+    display: flex;
+  }
+
+  .footer__container1,
+  .footer__container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .signUpNewsletter,
+  .location,
+  .contact,
+  .faq {
+    margin: 0px;
+  }
+
+  .footer__links {
+    margin-left: 40px;
+  }
+}
