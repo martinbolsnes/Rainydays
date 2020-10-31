@@ -18,7 +18,7 @@ header {
 nav ul li {
   display: inline;
   font-size: 1.5rem;
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   padding: 20px;
 }
 li a {

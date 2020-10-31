@@ -32,7 +32,7 @@ main {
 }
 
 .herobanner__heading {
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   font-size: 2rem;
   font-weight: bold;
   color: #0a3641;
@@ -40,11 +40,12 @@ main {
 
 .herobanner__text,
 .herobanner__button {
-  font-family: "proxima nova";
+  font-family: "Domine", serif;
 }
 
 .herobanner__text {
-  width: 67%;
+  width: 66%;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-left: 55px;
 }
@@ -88,7 +89,7 @@ main {
 h2 {
   display: flex;
   flex-direction: column;
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   color: #0a3641;
   font-weight: bold;
   font-size: 2rem;
@@ -121,7 +122,7 @@ a {
 .women__collection--text,
 .mens__collection--text {
   color: white;
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   font-size: 2.5rem;
 }
 
@@ -174,7 +175,7 @@ a {
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
-  font-family: "proxima nova";
+  font-family: "Domine", serif;
   color: #0a3641;
 }
 

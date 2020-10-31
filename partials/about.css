@@ -3,7 +3,7 @@
   grid-template-areas:
     "aboutpage__logo aboutpage__img"
     "about aboutpage__img";
-  font-family: "proxima nova";
+  font-family: "Domine", serif;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;

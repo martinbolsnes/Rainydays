@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  font-family: "proxima nova";
+  font-family: "Domine", serif;
 }
 
 .shopHero {
@@ -100,7 +100,7 @@
 .products__heading {
   display: flex;
   justify-content: center;
-  font-family: "montserrat";
+  font-family: "montserrat", sans-serif;
   color: #0a3641;
   font-size: 2rem;
   margin-bottom: 0;

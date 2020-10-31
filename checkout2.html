@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="This is the shipping page for Rainydays">
     <link rel="stylesheet" href="partials/main.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script
       src="https://kit.fontawesome.com/aaba5ad25b.js"
       crossorigin="anonymous"
@@ -48,7 +50,8 @@
             <p class="yourCart__info--size">Size: L</p>
             <div class="yourCart__quantity">
             <h3 class="yourCart__quantity--heading">Quantity</h3>
-            <button class="quantity__button">-1+</button>
+            <label for="quantity__button"></label>
+          <input type="number" id="quantity__button" name="quantity__button" min="1" max="10">
             <h3 class="yourCart__quantity--amount">2499 NOK</h3>
           </div>
           <div class="yourCart__prize">

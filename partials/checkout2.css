@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   height: fit-content;
-  font-family: "proxima nova";
+  font-family: "Domine", serif;
 }
 
 .shippingInfo__container {

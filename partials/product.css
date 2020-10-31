@@ -5,7 +5,7 @@
     "product__info--container";
   display: flex;
   flex-direction: row;
-  font-family: "proxima nova";
+  font-family: "Domine", serif;
 }
 
 .product__img--container,
