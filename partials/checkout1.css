@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   height: fit-content;
   font-family: "Domine", serif;
+  margin-top: 100px;
 }
 
 .checkout__header {
@@ -182,6 +183,7 @@
   .checkout1__main {
     display: flex;
     flex-direction: column;
+    margin-top: 60px;
   }
 
   .yourCart {

@@ -20,6 +20,7 @@ main {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 }
 
 .herobanner__container {
@@ -348,6 +349,7 @@ a {
 
   .herobanner {
     height: 150px;
+    margin-top: 50px;
   }
 
   .herobanner__container {
