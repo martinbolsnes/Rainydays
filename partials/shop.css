@@ -171,6 +171,9 @@
 }
 
 @media (max-width: 767px) {
+  .shop__main {
+    margin-top: 50px;
+  }
   .shopHero {
     display: none;
   }
