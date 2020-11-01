@@ -51,6 +51,12 @@ li a:hover {
   display: none;
 }
 
+.fa-bars {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  display: none;
+}
+
 @media (max-width: 1440px) {
   .logo-991,
   .logo-767 {
@@ -83,6 +89,19 @@ li a:hover {
   .cart__icon,
   .profile__icon {
     display: none;
+  }
+
+  .fa-bars {
+    display: block;
+    text-decoration: none;
+  }
+
+  .menu-list,
+  .menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   @media (max-width: 767px) {
