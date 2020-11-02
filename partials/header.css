@@ -3,7 +3,7 @@ header {
   display: flex;
   height: 100px;
   width: 100%;
-  border: solid black 1px;
+  border-bottom: solid #0a3641 1px;
   background-color: white;
   z-index: 3;
   display: flex;
@@ -17,7 +17,7 @@ header {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   font-size: 1.5rem;
   font-family: "montserrat", sans-serif;
   padding: 20px;
@@ -25,10 +25,15 @@ nav ul li {
 li a {
   text-decoration: none;
   color: black;
+  padding-bottom: 34px;
 }
 
 li a:hover {
-  text-decoration: underline;
+  border-bottom: solid #0a3641 2px;
+}
+
+li a.active-page {
+  border-bottom: solid #0a3641 2px;
 }
 
 .profile__icon,
@@ -37,14 +42,9 @@ li a:hover {
   padding: 10px;
 }
 
-.cart__icon {
-  margin-right: 40px;
-}
-
 .fa-bars {
-  font-size: 1.5rem;
-  margin-right: 10px;
   display: none;
+  color: white;
 }
 
 .menu-list,
@@ -88,6 +88,9 @@ li a:hover {
   .fa-bars {
     display: block;
     text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    margin-right: 20px;
   }
 
   .menu-list,
@@ -114,16 +117,15 @@ li a:hover {
       height: 50px;
     }
 
-    .hamburger {
-      display: block;
-      margin-right: 20px;
-    }
-
     nav,
     ul,
     .cart__icon,
     .profile__icon {
       display: none;
+    }
+
+    .fa-bars {
+      font-size: 1.5rem;
     }
   }
 }

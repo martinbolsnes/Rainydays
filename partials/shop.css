@@ -94,7 +94,7 @@
 .filter__subheading {
   font-size: 1rem;
   font-weight: bold;
-  color: black;
+  color: #0a3641;
   text-align: center;
 }
 
@@ -170,9 +170,6 @@
 }
 
 @media (max-width: 767px) {
-  .shop__main {
-    margin-top: 50px;
-  }
   .shopHero {
     display: none;
   }
@@ -188,7 +185,7 @@
   }
 
   .filter__subheading {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
 
   .filter__button {

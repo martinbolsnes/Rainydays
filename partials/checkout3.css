@@ -62,6 +62,10 @@
 
 .payment__button:hover {
   cursor: pointer;
+  background-color: white;
+  color: #0a3641;
+  border: solid #0a3641 2px;
+  font-weight: bolder;
 }
 
 @media (max-width: 991px) {

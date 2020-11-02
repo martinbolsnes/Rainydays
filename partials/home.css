@@ -137,6 +137,14 @@ a {
   margin-left: 20px;
 }
 
+.women__collection--text:hover {
+  font-size: 2.6rem;
+}
+
+.mens__collection--text:hover {
+  font-size: 2.6rem;
+}
+
 .newArrivals__header {
   grid-area: newArrivals__header;
   width: 100%;
