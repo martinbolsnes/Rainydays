@@ -1,13 +1,13 @@
 main {
   display: grid;
   grid-template-areas:
-    "header"
-    "herobanner"
-    "ourCollections__header"
-    "ourCollections"
-    "newArrivals__header"
-    "newArrivals"
-    "footer";
+    'header'
+    'herobanner'
+    'ourCollections__header'
+    'ourCollections'
+    'newArrivals__header'
+    'newArrivals'
+    'footer';
 }
 
 .herobanner {
@@ -33,7 +33,7 @@ main {
 }
 
 .herobanner__heading {
-  font-family: "montserrat", sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-size: 2rem;
   font-weight: bold;
   color: #0a3641;
@@ -41,7 +41,7 @@ main {
 
 .herobanner__text,
 .herobanner__button {
-  font-family: "Domine", serif;
+  font-family: 'Domine', serif;
 }
 
 .herobanner__text {
@@ -90,7 +90,7 @@ main {
 h2 {
   display: flex;
   flex-direction: column;
-  font-family: "montserrat", sans-serif;
+  font-family: 'montserrat', sans-serif;
   color: #0a3641;
   font-weight: bold;
   font-size: 2rem;
@@ -123,7 +123,7 @@ a {
 .women__collection--text,
 .mens__collection--text {
   color: white;
-  font-family: "montserrat", sans-serif;
+  font-family: 'montserrat', sans-serif;
   font-size: 2.5rem;
 }
 
@@ -184,7 +184,7 @@ a {
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
-  font-family: "Domine", serif;
+  font-family: 'Domine', serif;
   color: #0a3641;
 }
 
@@ -325,13 +325,13 @@ a {
   main {
     display: grid;
     grid-template-areas:
-      "header"
-      "herobanner"
-      "newArrivals__header"
-      "newArrivals"
-      "ourCollections__header"
-      "ourCollections"
-      "footer";
+      'header'
+      'herobanner'
+      'newArrivals__header'
+      'newArrivals'
+      'ourCollections__header'
+      'ourCollections'
+      'footer';
   }
   .logo-1440,
   .logo-991 {

@@ -1,13 +1,13 @@
 .shop__main {
   display: grid;
   grid-template-areas:
-    "shopHero shopHero"
-    "products__header products__header"
-    "filter products";
+    'shopHero shopHero'
+    'products__header products__header'
+    'filter products';
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  font-family: "Domine", serif;
+  font-family: 'Domine', serif;
 }
 
 .shopHero {
@@ -101,15 +101,13 @@
 .products__heading {
   display: flex;
   justify-content: center;
-  font-family: "montserrat", sans-serif;
+  font-family: 'montserrat', sans-serif;
   color: #0a3641;
   font-size: 2rem;
   margin-bottom: 0;
 }
 
-.products__box1,
-.products__box2,
-.products__box3 {
+.products__box {
   width: 33%;
   display: flex;
   flex-direction: column;
@@ -142,6 +140,14 @@
 
 .products__jacket--rating {
   width: 130px;
+}
+
+.error {
+  background-color: rgb(255 124 124);
+  color: white;
+  border: solid 1px red;
+  padding: 20px;
+  transition: 2s;
 }
 
 @media (max-width: 991px) {
