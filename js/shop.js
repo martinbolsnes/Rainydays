@@ -11,22 +11,17 @@ async function getProducts() {
 
     productsResults.forEach(function (value) {
       document.querySelector('.products').innerHTML += `
-        <div class products__box>
-            <img src="${value.images.src}">
+      <a class="products_link" href="product.html?id=${value.id}"  
+      <div class products__box>
+            <img class="products__jacket1" src="${value.images.src}">
             <h4 class="products__jacket--gender">${value.categories.name}</h4>
             <h5 class="products__jacket--name">${value.name}</h5>
             <h6 class="products__jacket--prize">${value.prices.price} ${value.prices.currency_symbol}</h6>
-        </div>`;
+        </div>
+        </a>`;
     });
-  } catch (error) {
-    document.querySelector('.alert').innerHTML = showAlertTouser(
-      'An error occured (Cannot load content)',
-      'error'
-    );
+  } catch {
   } finally {
-    setTimeout(function () {
-      document.querySelector('.alert').innerHTML = '';
-    }, 3000);
   }
 }
 

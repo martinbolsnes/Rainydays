@@ -231,6 +231,14 @@ a {
   height: 39px;
 }
 
+.error {
+  background-color: rgb(255 124 124);
+  color: white;
+  border: solid 1px red;
+  padding: 20px;
+  transition: 2s;
+}
+
 @media (max-width: 1440px) {
   .logo-991,
   .logo-767 {
