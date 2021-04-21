@@ -13,12 +13,14 @@ async function getProducts(productId) {
 
     document.title = productsArray.value.name;
 
-    document.querySelector(
-      '.product__info--name'
-    ).innerHTML = `${productsArray.name}`;
-    document.querySelector(
-      '.product__info--prize'
-    ).innerHTML = `${productsArray.prices.price}`;
+    productsArray.forEach(function (value) {
+      document.querySelector('.product__info--container').innerHTML += `
+        <div class="product__info--headings">
+            <h4 class="product__info--gender">${value.categories[0].name}</h4>
+            <h1 class="product__info--name">${value.name}</h1>
+            <h6 class="product__info--prize">${value.prices.price}</h6>
+        </div>`;
+    });
   } catch {
   } finally {
   }

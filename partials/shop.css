@@ -108,18 +108,22 @@
 }
 
 .products__box {
-  width: 33%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.products_link {
+  text-decoration: none;
+}
+
 .products__jacket1,
 .products__jacket3,
 .products__jacket4 {
   width: 50%;
-  height: 55%;
+  height: 70%;
 }
 
 .products__jacket--gender,
@@ -130,7 +134,7 @@
 }
 
 .products__jacket--name {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .products__jacket--prize {
