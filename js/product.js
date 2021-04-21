@@ -5,22 +5,27 @@ const id = params.get('id');
 async function getProducts(productId) {
   try {
     const response = await fetch(
-      'http://api.martinbols.tech/wp-json/wc/store/products/' + productId
+      'https://api.martinbols.tech/wp-json/wc/store/products/' + productId
     );
     const jsonResults = await response.json();
-    const productsArray = jsonResults;
-    console.log(productsArray);
+    const productsObject = jsonResults;
+    console.log(productsObject);
 
-    document.title = productsArray.value.name;
+    document.title = productsObject.name;
 
-    productsArray.forEach(function (value) {
-      document.querySelector('.product__info--container').innerHTML += `
-        <div class="product__info--headings">
-            <h4 class="product__info--gender">${value.categories[0].name}</h4>
-            <h1 class="product__info--name">${value.name}</h1>
-            <h6 class="product__info--prize">${value.prices.price}</h6>
-        </div>`;
-    });
+    document.querySelector(
+      '.product__img--container'
+    ).style.backgroundImage = `url('${productsObject.images[0].src}')`;
+
+    document.querySelector(
+      '.product__info--name'
+    ).innerHTML = `${productsObject.name}`;
+    document.querySelector(
+      '.product__info--prize'
+    ).innerHTML = `${productsObject.prices.price} ${productsObject.prices.currency_symbol}`;
+    document.querySelector(
+      '.product__info--gender'
+    ).innerHTML = `${productsObject.categories[0].name}`;
   } catch {
   } finally {
   }

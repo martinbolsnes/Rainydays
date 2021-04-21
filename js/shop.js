@@ -3,7 +3,7 @@ const productsUrl = '';
 async function getProducts() {
   try {
     const response = await fetch(
-      'http://api.martinbols.tech/wp-json/wc/store/products'
+      'https://api.martinbols.tech/wp-json/wc/store/products'
     );
     const jsonFromServer = await response.json();
     const productsResults = jsonFromServer;

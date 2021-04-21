@@ -1,11 +1,11 @@
 .product__main {
   display: grid;
   grid-template-areas:
-    "product__img--container"
-    "product__info--container";
+    'product__img--container'
+    'product__info--container';
   display: flex;
   flex-direction: row;
-  font-family: "Domine", serif;
+  font-family: 'Domine', serif;
   margin-top: 100px;
 }
 
@@ -20,6 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .product__info--container {
