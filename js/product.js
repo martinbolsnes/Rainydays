@@ -12,11 +12,6 @@ async function getProducts(productId) {
     console.log(productsObject);
 
     document.title = productsObject.name;
-
-    document.querySelector(
-      '.product__img--container'
-    ).style.backgroundImage = `url('${productsObject.images[0].src}')`;
-
     document.querySelector(
       '.product__info--name'
     ).innerHTML = `${productsObject.name}`;
@@ -26,6 +21,10 @@ async function getProducts(productId) {
     document.querySelector(
       '.product__info--gender'
     ).innerHTML = `${productsObject.categories[0].name}`;
+
+    document.querySelector(
+      '.product__img--container'
+    ).innerHTML = `<img class="product__img" src="${productsObject.images[0].src}">`;
   } catch {
   } finally {
   }
