@@ -9,6 +9,8 @@ async function getProducts() {
     const productsResults = jsonFromServer;
     console.log(productsResults);
 
+    document.querySelector('.loading').classList.add('hide');
+
     productsResults.forEach(function (value) {
       document.querySelector('.products').innerHTML += `  
       <div class products__box>
