@@ -25,8 +25,15 @@ async function getProducts(productId) {
     document.querySelector(
       '.product__img--container'
     ).innerHTML = `<img class="product__img" src="${productsObject.images[0].src}">`;
-  } catch {
+  } catch (error) {
+    document.querySelector('.alert').innerHTML = showAlertTouser(
+      'An error occured (Cannot load content)',
+      'error'
+    );
   } finally {
+    setTimeout(function () {
+      document.querySelector('.alert').innerHTML = '';
+    }, 3000);
   }
 }
 

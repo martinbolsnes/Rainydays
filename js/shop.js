@@ -22,8 +22,15 @@ async function getProducts() {
             <h6 class="products__jacket--prize">${value.prices.price} ${value.prices.currency_symbol}</h6>
         </div>`;
     });
-  } catch {
+  } catch (error) {
+    document.querySelector('.alert').innerHTML = showAlertTouser(
+      'An error occured (Cannot load content)',
+      'error'
+    );
   } finally {
+    setTimeout(function () {
+      document.querySelector('.alert').innerHTML = '';
+    }, 3000);
   }
 }
 

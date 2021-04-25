@@ -24,8 +24,15 @@ async function getProducts() {
         break;
       }
     }
-  } catch {
+  } catch (error) {
+    document.querySelector('.alert').innerHTML = showAlertTouser(
+      'An error occured (Cannot load content)',
+      'error'
+    );
   } finally {
+    setTimeout(function () {
+      document.querySelector('.alert').innerHTML = '';
+    }, 3000);
   }
 }
 
